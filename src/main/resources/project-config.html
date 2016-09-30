@@ -89,6 +89,18 @@
 
     <div class="description">$i18n.getText("config.blockedPRs.description")</div>
   </div>
+  <div class="field-group">
+    <label for="autoUnapprove">$i18n.getText("config.autoUnapprove.label")</label>
+    <input class="text config" type="checkbox" id="autoUnapprove" name="autoUnapprove">
+
+    <div class="description">$i18n.getText("config.autoUnapprove.description")</div>
+  </div>
+  <div class="field-group">
+    <label for="blockByDefaultReviewer">$i18n.getText("config.blockByDefaultReviewer.label")</label>
+    <input class="text config" type="checkbox" id="blockByDefaultReviewer" name="blockByDefaultReviewer">
+
+    <div class="description">$i18n.getText("config.blockByDefaultReviewer.description")</div>
+  </div>
 </form>
 
 <button id="saveButton" class="aui-button">$i18n.getText("config.save.label")</button>

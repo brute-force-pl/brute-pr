@@ -73,12 +73,12 @@ define('pr-harmony-create', [
     return config.requiredReviewers.length == config.requiredReviews;
   }
 
-  function isSubmitEnabled() {
+  function isSubmitDisabled() {
     return currentRequiredReviewers().length < config.requiredReviews;
   }
 
   function handleChange() {
-    if (isSubmitEnabled()) {
+    if (isSubmitDisabled()) {
       log('Disabling submit button');
       showFlag();
       $('#submit-form').prop('disabled', true);
