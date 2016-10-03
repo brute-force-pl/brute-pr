@@ -28,7 +28,7 @@
 
   <template-context-item key="applicationPropertiesContextItem" component-ref="applicationProperties"
                          context-key="applicationProperties" name="Application Properties Context Item"/>
-  <resource type="i18n" name="i18n" location="com.monitorjbl.plugins.i18n"/>
+  <resource type="i18n" name="i18n" location="pl.brute_force.brute_pr.i18n"/>
   <web-resource name="Config Web Resources" key="resources">
     <dependency>com.atlassian.auiplugin:ajs</dependency>
     <dependency>com.atlassian.auiplugin:aui-select2</dependency>
@@ -73,7 +73,7 @@
 
   <web-item key="brute-pr-proj-config" weight="30"
             section="bitbucket.project.settings.panel/project-settings-addons-section">
-    <label>PR Harmony</label>
+    <label>Brute PR</label>
     <link>/plugins/servlet/brute-pr/${project.key}</link>
     <tooltip>Advanced pull request options</tooltip>
   </web-item>

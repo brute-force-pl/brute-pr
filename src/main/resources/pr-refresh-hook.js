@@ -26,6 +26,6 @@ AJS.$(document).ready(function ($) {
 
 function log() {
   var args = [].slice.apply(arguments);
-  args.unshift('[PR Harmony]:');
+  args.unshift('[BRUTE PR]:');
   AJS.log.apply(this, args);
 }

@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.brute_force</groupId>
   <artifactId>brute-pr</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>atlassian-plugin</packaging>
 
-  <name>PR Harmony</name>
+  <name>Brute PR</name>
   <description>Provides additional pull request workflows for your team</description>
 
   <organization>
