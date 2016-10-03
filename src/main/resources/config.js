@@ -31,7 +31,7 @@
     log('Uploading configuration', post);
 
     $.ajax({
-      url: baseUrl + "/rest/pr-harmony/1.0/config/" + projectKey + "/" + (repoSlug || ''),
+      url: baseUrl + "/rest/brute-pr/1.0/config/" + projectKey + "/" + (repoSlug || ''),
       type: "PUT",
       contentType: "application/json",
       data: post,
@@ -45,7 +45,7 @@
   function getConfig() {
     log('Loading configuration');
     $.ajax({
-      url: baseUrl + "/rest/pr-harmony/1.0/config/" + projectKey + "/" + (repoSlug || ''),
+      url: baseUrl + "/rest/brute-pr/1.0/config/" + projectKey + "/" + (repoSlug || ''),
       dataType: "json",
       success: function (config) {
         log('Configuration loaded', config);
@@ -62,7 +62,7 @@
         $('#automergePRs').val(config.automergePRs);
         $('#automergePRsFrom').val(config.automergePRsFrom);
         $('#autoUnapprove').val(config.autoUnapprove);
-        $('#blockByDefaultReviewer').val(config.blockByDefaultReviewer);
+        $('#blockByRequiredReviewer').val(config.blockByRequiredReviewer);
 
         //initialize selections
         userSelection("#defaultReviewers");

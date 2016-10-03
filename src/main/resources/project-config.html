@@ -1,10 +1,10 @@
 <html>
 <head>
   <title>$i18n.getText("config.title")</title>
-  $webResourceManager.requireResource("com.monitorjbl.plugins.pr-harmony:resources")
+  $webResourceManager.requireResource("pl.brute_force.brute_pr.brute-pr:resources")
   <meta name="decorator" content="bitbucket.project.settings"/>
   <meta name="projectKey" content="$projectKey">
-  <meta name="activeTab" content="pr-harmony-proj-config">
+  <meta name="activeTab" content="brute-pr-proj-config">
 </head>
 <body>
 <input id="baseUrl" type="hidden" value="$applicationProperties.getBaseUrl()"/>
@@ -96,10 +96,10 @@
     <div class="description">$i18n.getText("config.autoUnapprove.description")</div>
   </div>
   <div class="field-group">
-    <label for="blockByDefaultReviewer">$i18n.getText("config.blockByDefaultReviewer.label")</label>
-    <input class="text config" type="checkbox" id="blockByDefaultReviewer" name="blockByDefaultReviewer">
+    <label for="blockByRequiredReviewer">$i18n.getText("config.blockByRequiredReviewer.label")</label>
+    <input class="text config" type="checkbox" id="blockByRequiredReviewer" name="blockByRequiredReviewer">
 
-    <div class="description">$i18n.getText("config.blockByDefaultReviewer.description")</div>
+    <div class="description">$i18n.getText("config.blockByRequiredReviewer.description")</div>
   </div>
 </form>
 

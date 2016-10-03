@@ -1,6 +1,6 @@
 log('pr-create-hook.js');
 
-define('pr-harmony-create', [
+define('brute-pr-create', [
   'jquery',
   'bitbucket/util/events',
   'bitbucket/util/state',
@@ -126,7 +126,7 @@ define('pr-harmony-create', [
     var target = getTarget();
     log('Fetching PR Harmony configuration for '+target.project.key+'/'+target.slug);
     $.ajax({
-      url: root + '/rest/pr-harmony/1.0/users/' + target.project.key + '/' + target.slug,
+      url: root + '/rest/brute-pr/1.0/users/' + target.project.key + '/' + target.slug,
       dataType: "json",
       success: function (data) {
         log('Loaded config', data);
@@ -156,12 +156,12 @@ define('pr-harmony-create', [
 AJS.$(document).ready(function ($) {
   return function () {
     log('Reguiring PR create hook');
-    require("pr-harmony-create").init();
+    require("brute-pr-create").init();
   };
 }(AJS.$));
 
 function log() {
   var args = [].slice.apply(arguments);
-  args.unshift('[PR Harmony]:');
+  args.unshift('[BRUTE PR]:');
   AJS.log.apply(this, args);
 }

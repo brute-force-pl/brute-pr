@@ -1,6 +1,6 @@
-log('pr-refresh-hook.js');
+log('brute-pr-hook.js');
 
-define('pr-harmony-refresh', [
+define('brute-pr-refresh', [
   'jquery',
   'bitbucket/util/events',
   'bitbucket/util/state',
@@ -20,7 +20,7 @@ define('pr-harmony-refresh', [
 AJS.$(document).ready(function ($) {
   return function () {
     log('Reguiring PR refresh hook');
-    require("pr-harmony-refresh").init();
+    require("brute-pr-refresh").init();
   };
 }(AJS.$));
 

@@ -3,17 +3,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.monitorjbl.plugins</groupId>
-  <artifactId>pr-harmony</artifactId>
-  <version>2.3.1</version>
+  <groupId>pl.brute_force</groupId>
+  <artifactId>brute-pr</artifactId>
+  <version>0.0.1</version>
   <packaging>atlassian-plugin</packaging>
 
   <name>PR Harmony</name>
   <description>Provides additional pull request workflows for your team</description>
 
   <organization>
-    <name>Taylor Jones</name>
-    <url>http://monitorjbl.github.io</url>
+    <name>Brute-Force</name>
+    <url>https://github.com/brute-force-pl</url>
   </organization>
 
   <dependencyManagement>
